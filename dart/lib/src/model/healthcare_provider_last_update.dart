@@ -13,7 +13,7 @@ part 'healthcare_provider_last_update.g.dart';
 /// * [lastUpdate] 
 abstract class HealthcareProviderLastUpdate implements Built<HealthcareProviderLastUpdate, HealthcareProviderLastUpdateBuilder> {
     @BuiltValueField(wireName: r'lastUpdate')
-    String? get lastUpdate;
+    String get lastUpdate;
 
     HealthcareProviderLastUpdate._();
 
@@ -37,12 +37,10 @@ class _$HealthcareProviderLastUpdateSerializer implements StructuredSerializer<H
     Iterable<Object?> serialize(Serializers serializers, HealthcareProviderLastUpdate object,
         {FullType specifiedType = FullType.unspecified}) {
         final result = <Object?>[];
-        if (object.lastUpdate != null) {
-            result
-                ..add(r'lastUpdate')
-                ..add(serializers.serialize(object.lastUpdate,
-                    specifiedType: const FullType(String)));
-        }
+        result
+            ..add(r'lastUpdate')
+            ..add(serializers.serialize(object.lastUpdate,
+                specifiedType: const FullType(String)));
         return result;
     }
 

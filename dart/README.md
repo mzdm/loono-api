@@ -73,44 +73,44 @@ All URIs are relative to *https://loono.ceskodigital.net:443*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-[*AccountApi*](doc/AccountApi.md) | [**deleteAccount**](doc/AccountApi.md#deleteaccount) | **POST** /account/delete | [Draft] Delete Account
-[*AccountApi*](doc/AccountApi.md) | [**deleteExamination**](doc/AccountApi.md#deleteexamination) | **POST** /examinations/reset | [Draft] Reset Examination Record
-[*AccountApi*](doc/AccountApi.md) | [**getAccount**](doc/AccountApi.md#getaccount) | **GET** /account | GET Account
-[*AccountApi*](doc/AccountApi.md) | [**updateAccountSettings**](doc/AccountApi.md#updateaccountsettings) | **POST** /account/settings/update | Update Account Settings
-[*AccountApi*](doc/AccountApi.md) | [**updateAccountUser**](doc/AccountApi.md#updateaccountuser) | **POST** /account/user/update | Update Account User
-[*ExaminationsApi*](doc/ExaminationsApi.md) | [**completeExamination**](doc/ExaminationsApi.md#completeexamination) | **POST** /examinations/{type}/complete | Complete Examination
-[*ExaminationsApi*](doc/ExaminationsApi.md) | [**deleteExamination**](doc/ExaminationsApi.md#deleteexamination) | **POST** /examinations/reset | [Draft] Reset Examination Record
-[*ExaminationsApi*](doc/ExaminationsApi.md) | [**getExaminations**](doc/ExaminationsApi.md#getexaminations) | **GET** /examinations | Get Examination Records
-[*LeaderboardApi*](doc/LeaderboardApi.md) | [**getLeaderboard**](doc/LeaderboardApi.md#getleaderboard) | **GET** /leaderboard | [Draft] Get Leaderboard
-[*ProvidersApi*](doc/ProvidersApi.md) | [**getProvidersAll**](doc/ProvidersApi.md#getprovidersall) | **GET** /providers/all | Gets all healthcare providers data
-[*ProvidersApi*](doc/ProvidersApi.md) | [**getProvidersLastupdate**](doc/ProvidersApi.md#getproviderslastupdate) | **GET** /providers/lastupdate | Gets last date of healthcare provider update
-[*ProvidersApi*](doc/ProvidersApi.md) | [**getProvidersUpdate**](doc/ProvidersApi.md#getprovidersupdate) | **GET** /providers/update | Trigger healthcare provider update
-[*ProvidersApi*](doc/ProvidersApi.md) | [**postProvidersDetail**](doc/ProvidersApi.md#postprovidersdetail) | **POST** /providers/details | Gets details of given healthcare providers
+[*AccountApi*](doc\AccountApi.md) | [**deleteAccount**](doc\AccountApi.md#deleteaccount) | **POST** /account/delete | [Draft] Delete Account
+[*AccountApi*](doc\AccountApi.md) | [**deleteExamination**](doc\AccountApi.md#deleteexamination) | **POST** /examinations/reset | [Draft] Reset Examination Record
+[*AccountApi*](doc\AccountApi.md) | [**getAccount**](doc\AccountApi.md#getaccount) | **GET** /account | GET Account
+[*AccountApi*](doc\AccountApi.md) | [**updateAccountSettings**](doc\AccountApi.md#updateaccountsettings) | **POST** /account/settings/update | Update Account Settings
+[*AccountApi*](doc\AccountApi.md) | [**updateAccountUser**](doc\AccountApi.md#updateaccountuser) | **POST** /account/user/update | Update Account User
+[*ExaminationsApi*](doc\ExaminationsApi.md) | [**completeExamination**](doc\ExaminationsApi.md#completeexamination) | **POST** /examinations/{type}/complete | Complete Examination
+[*ExaminationsApi*](doc\ExaminationsApi.md) | [**deleteExamination**](doc\ExaminationsApi.md#deleteexamination) | **POST** /examinations/reset | [Draft] Reset Examination Record
+[*ExaminationsApi*](doc\ExaminationsApi.md) | [**getExaminations**](doc\ExaminationsApi.md#getexaminations) | **GET** /examinations | Get Examination Records
+[*LeaderboardApi*](doc\LeaderboardApi.md) | [**getLeaderboard**](doc\LeaderboardApi.md#getleaderboard) | **GET** /leaderboard | Draft Get Leaderboard
+[*ProvidersApi*](doc\ProvidersApi.md) | [**getProvidersAll**](doc\ProvidersApi.md#getprovidersall) | **GET** /providers/all | Gets all healthcare providers data
+[*ProvidersApi*](doc\ProvidersApi.md) | [**getProvidersLastupdate**](doc\ProvidersApi.md#getproviderslastupdate) | **GET** /providers/lastupdate | Gets last date of healthcare provider update
+[*ProvidersApi*](doc\ProvidersApi.md) | [**getProvidersUpdate**](doc\ProvidersApi.md#getprovidersupdate) | **GET** /providers/update | Trigger healthcare provider update
+[*ProvidersApi*](doc\ProvidersApi.md) | [**postProvidersDetail**](doc\ProvidersApi.md#postprovidersdetail) | **POST** /providers/details | Gets details of given healthcare providers
 
 
 ## Documentation For Models
 
- - [Account](doc/Account.md)
- - [Appointment](doc/Appointment.md)
- - [Error](doc/Error.md)
- - [ExaminationCompletion](doc/ExaminationCompletion.md)
- - [ExaminationRecord](doc/ExaminationRecord.md)
- - [ExaminationTypeEnum](doc/ExaminationTypeEnum.md)
- - [HealthcareProviderDetail](doc/HealthcareProviderDetail.md)
- - [HealthcareProviderDetailList](doc/HealthcareProviderDetailList.md)
- - [HealthcareProviderId](doc/HealthcareProviderId.md)
- - [HealthcareProviderIdList](doc/HealthcareProviderIdList.md)
- - [HealthcareProviderLastUpdate](doc/HealthcareProviderLastUpdate.md)
- - [HealthcareProviderList](doc/HealthcareProviderList.md)
- - [Leaderboard](doc/Leaderboard.md)
- - [LeaderboardUser](doc/LeaderboardUser.md)
- - [Settings](doc/Settings.md)
- - [Sex](doc/Sex.md)
- - [SimpleHealthcareProvider](doc/SimpleHealthcareProvider.md)
- - [Streak](doc/Streak.md)
- - [UpdateStatusMessage](doc/UpdateStatusMessage.md)
- - [User](doc/User.md)
- - [UserPatch](doc/UserPatch.md)
+ - [Account](doc\Account.md)
+ - [Appointment](doc\Appointment.md)
+ - [Error](doc\Error.md)
+ - [ExaminationCompletion](doc\ExaminationCompletion.md)
+ - [ExaminationRecord](doc\ExaminationRecord.md)
+ - [ExaminationTypeEnum](doc\ExaminationTypeEnum.md)
+ - [HealthcareProviderDetail](doc\HealthcareProviderDetail.md)
+ - [HealthcareProviderDetailList](doc\HealthcareProviderDetailList.md)
+ - [HealthcareProviderId](doc\HealthcareProviderId.md)
+ - [HealthcareProviderIdList](doc\HealthcareProviderIdList.md)
+ - [HealthcareProviderLastUpdate](doc\HealthcareProviderLastUpdate.md)
+ - [HealthcareProviderList](doc\HealthcareProviderList.md)
+ - [Leaderboard](doc\Leaderboard.md)
+ - [LeaderboardUser](doc\LeaderboardUser.md)
+ - [Settings](doc\Settings.md)
+ - [Sex](doc\Sex.md)
+ - [SimpleHealthcareProvider](doc\SimpleHealthcareProvider.md)
+ - [Streak](doc\Streak.md)
+ - [UpdateStatusMessage](doc\UpdateStatusMessage.md)
+ - [User](doc\User.md)
+ - [UserPatch](doc\UserPatch.md)
 
 
 ## Documentation For Authorization
