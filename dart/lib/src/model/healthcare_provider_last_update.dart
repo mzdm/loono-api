@@ -2,6 +2,7 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
+import 'package:loono_api/src/model/date.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
@@ -13,7 +14,7 @@ part 'healthcare_provider_last_update.g.dart';
 /// * [lastUpdate] 
 abstract class HealthcareProviderLastUpdate implements Built<HealthcareProviderLastUpdate, HealthcareProviderLastUpdateBuilder> {
     @BuiltValueField(wireName: r'lastUpdate')
-    String get lastUpdate;
+    Date get lastUpdate;
 
     HealthcareProviderLastUpdate._();
 
@@ -40,7 +41,7 @@ class _$HealthcareProviderLastUpdateSerializer implements StructuredSerializer<H
         result
             ..add(r'lastUpdate')
             ..add(serializers.serialize(object.lastUpdate,
-                specifiedType: const FullType(String)));
+                specifiedType: const FullType(Date)));
         return result;
     }
 
@@ -58,7 +59,7 @@ class _$HealthcareProviderLastUpdateSerializer implements StructuredSerializer<H
             switch (key) {
                 case r'lastUpdate':
                     final valueDes = serializers.deserialize(value,
-                        specifiedType: const FullType(String)) as String;
+                        specifiedType: const FullType(Date)) as Date;
                     result.lastUpdate = valueDes;
                     break;
             }

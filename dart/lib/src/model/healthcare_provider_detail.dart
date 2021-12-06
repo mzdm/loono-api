@@ -87,10 +87,10 @@ abstract class HealthcareProviderDetail implements Built<HealthcareProviderDetai
     String? get substitute;
 
     @BuiltValueField(wireName: r'lat')
-    double? get lat;
+    double get lat;
 
     @BuiltValueField(wireName: r'lng')
-    double? get lng;
+    double get lng;
 
     HealthcareProviderDetail._();
 
@@ -204,18 +204,14 @@ class _$HealthcareProviderDetailSerializer implements StructuredSerializer<Healt
                 ..add(serializers.serialize(object.substitute,
                     specifiedType: const FullType(String)));
         }
-        if (object.lat != null) {
-            result
-                ..add(r'lat')
-                ..add(serializers.serialize(object.lat,
-                    specifiedType: const FullType(double)));
-        }
-        if (object.lng != null) {
-            result
-                ..add(r'lng')
-                ..add(serializers.serialize(object.lng,
-                    specifiedType: const FullType(double)));
-        }
+        result
+            ..add(r'lat')
+            ..add(serializers.serialize(object.lat,
+                specifiedType: const FullType(double)));
+        result
+            ..add(r'lng')
+            ..add(serializers.serialize(object.lng,
+                specifiedType: const FullType(double)));
         return result;
     }
 

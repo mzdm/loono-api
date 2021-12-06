@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **houseNumber** | **String** |  | 
 **category** | **BuiltList&lt;String&gt;** |  | 
 **specialization** | **String** |  | [optional] 
-**lat** | **double** |  | [optional] 
-**lng** | **double** |  | [optional] 
+**lat** | **double** |  | 
+**lng** | **double** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

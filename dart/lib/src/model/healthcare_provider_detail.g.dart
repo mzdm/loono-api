@@ -44,9 +44,9 @@ class _$HealthcareProviderDetail extends HealthcareProviderDetail {
   @override
   final String? substitute;
   @override
-  final double? lat;
+  final double lat;
   @override
-  final double? lng;
+  final double lng;
 
   factory _$HealthcareProviderDetail(
           [void Function(HealthcareProviderDetailBuilder)? updates]) =>
@@ -71,8 +71,8 @@ class _$HealthcareProviderDetail extends HealthcareProviderDetail {
       this.careForm,
       this.careType,
       this.substitute,
-      this.lat,
-      this.lng})
+      required this.lat,
+      required this.lng})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         locationId, 'HealthcareProviderDetail', 'locationId');
@@ -92,6 +92,10 @@ class _$HealthcareProviderDetail extends HealthcareProviderDetail {
         ico, 'HealthcareProviderDetail', 'ico');
     BuiltValueNullFieldError.checkNotNull(
         category, 'HealthcareProviderDetail', 'category');
+    BuiltValueNullFieldError.checkNotNull(
+        lat, 'HealthcareProviderDetail', 'lat');
+    BuiltValueNullFieldError.checkNotNull(
+        lng, 'HealthcareProviderDetail', 'lng');
   }
 
   @override
@@ -363,8 +367,8 @@ class HealthcareProviderDetailBuilder
               careForm: careForm,
               careType: careType,
               substitute: substitute,
-              lat: lat,
-              lng: lng);
+              lat: BuiltValueNullFieldError.checkNotNull(lat, 'HealthcareProviderDetail', 'lat'),
+              lng: BuiltValueNullFieldError.checkNotNull(lng, 'HealthcareProviderDetail', 'lng'));
     } catch (_) {
       late String _$failedField;
       try {

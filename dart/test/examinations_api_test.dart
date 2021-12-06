@@ -1,10 +1,10 @@
 import 'package:test/test.dart';
-import 'package:openapi/openapi.dart';
+import 'package:loono_api/loono_api.dart';
 
 
 /// tests for ExaminationsApi
 void main() {
-  final instance = Openapi().getExaminationsApi();
+  final instance = LoonoApi().getExaminationsApi();
 
   group(ExaminationsApi, () {
     // Complete Examination
@@ -20,7 +20,7 @@ void main() {
     //
     // Delete the aggregate examination record for this examination type.  Special consideration: How to prevent abuse and point cheating? SOME information about the history of point entitlement will have to be retained so that people don't spam create/delete to farm points.
     //
-    //Future<BuiltList<ExaminationRecord>> deleteExamination({ JsonObject body }) async
+    //Future<BuiltList<ExaminationRecord>> deleteExamination({ dynamic body }) async
     test('test deleteExamination', () async {
       // TODO
     });

@@ -26,9 +26,9 @@ class _$SimpleHealthcareProvider extends SimpleHealthcareProvider {
   @override
   final String? specialization;
   @override
-  final double? lat;
+  final double lat;
   @override
-  final double? lng;
+  final double lng;
 
   factory _$SimpleHealthcareProvider(
           [void Function(SimpleHealthcareProviderBuilder)? updates]) =>
@@ -44,8 +44,8 @@ class _$SimpleHealthcareProvider extends SimpleHealthcareProvider {
       required this.houseNumber,
       required this.category,
       this.specialization,
-      this.lat,
-      this.lng})
+      required this.lat,
+      required this.lng})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         locationId, 'SimpleHealthcareProvider', 'locationId');
@@ -61,6 +61,10 @@ class _$SimpleHealthcareProvider extends SimpleHealthcareProvider {
         houseNumber, 'SimpleHealthcareProvider', 'houseNumber');
     BuiltValueNullFieldError.checkNotNull(
         category, 'SimpleHealthcareProvider', 'category');
+    BuiltValueNullFieldError.checkNotNull(
+        lat, 'SimpleHealthcareProvider', 'lat');
+    BuiltValueNullFieldError.checkNotNull(
+        lng, 'SimpleHealthcareProvider', 'lng');
   }
 
   @override
@@ -238,8 +242,10 @@ class SimpleHealthcareProviderBuilder
                   houseNumber, 'SimpleHealthcareProvider', 'houseNumber'),
               category: category.build(),
               specialization: specialization,
-              lat: lat,
-              lng: lng);
+              lat: BuiltValueNullFieldError.checkNotNull(
+                  lat, 'SimpleHealthcareProvider', 'lat'),
+              lng: BuiltValueNullFieldError.checkNotNull(
+                  lng, 'SimpleHealthcareProvider', 'lng'));
     } catch (_) {
       late String _$failedField;
       try {

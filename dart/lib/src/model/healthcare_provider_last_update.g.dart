@@ -8,7 +8,7 @@ part of 'healthcare_provider_last_update.dart';
 
 class _$HealthcareProviderLastUpdate extends HealthcareProviderLastUpdate {
   @override
-  final String lastUpdate;
+  final Date lastUpdate;
 
   factory _$HealthcareProviderLastUpdate(
           [void Function(HealthcareProviderLastUpdateBuilder)? updates]) =>
@@ -54,9 +54,9 @@ class HealthcareProviderLastUpdateBuilder
             HealthcareProviderLastUpdateBuilder> {
   _$HealthcareProviderLastUpdate? _$v;
 
-  String? _lastUpdate;
-  String? get lastUpdate => _$this._lastUpdate;
-  set lastUpdate(String? lastUpdate) => _$this._lastUpdate = lastUpdate;
+  Date? _lastUpdate;
+  Date? get lastUpdate => _$this._lastUpdate;
+  set lastUpdate(Date? lastUpdate) => _$this._lastUpdate = lastUpdate;
 
   HealthcareProviderLastUpdateBuilder() {
     HealthcareProviderLastUpdate._defaults(this);
